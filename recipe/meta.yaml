@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "17.8.0" %}
-{% set sha256 = "8c0e5949851a9771a50d637b708322d73a4d4090fa354e5cb24a4f7464e81d47" %}
+{% set version = "18.5.0" %}
+{% set sha256 = "2b6da2c90c0f053232775d96e816687bf607062b9b2947f625f5586c357cbd59" %}
 
 package:
   name: {{ name|lower }}
