@@ -18,12 +18,15 @@ information useful to end users.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/towncrier-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/towncrier-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/towncrier-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/towncrier-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/towncrier/badges/version.svg)](https://anaconda.org/conda-forge/towncrier)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/towncrier/badges/downloads.svg)](https://anaconda.org/conda-forge/towncrier)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-towncrier-green.svg)](https://anaconda.org/conda-forge/towncrier) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/towncrier.svg)](https://anaconda.org/conda-forge/towncrier) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/towncrier.svg)](https://anaconda.org/conda-forge/towncrier) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/towncrier.svg)](https://anaconda.org/conda-forge/towncrier) |
 
 Installing towncrier
 ====================
