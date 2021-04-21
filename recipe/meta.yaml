@@ -19,10 +19,10 @@ build:
     - towncrier = towncrier:_main
 
 requirements:
-  build:
+  host:
+    - incremental
     - python
     - pip
-    - incremental
   run:
     - python
     - click
