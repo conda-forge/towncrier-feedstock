@@ -37,7 +37,7 @@ test:
     - towncrier --help
 
 about:
-  home: https://github.com/hawkowl/towncrier
+  home: https://github.com/twisted/towncrier
   license: MIT
   license_family: MIT
   license_file: LICENSE
