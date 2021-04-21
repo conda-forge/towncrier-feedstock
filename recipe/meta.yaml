@@ -13,18 +13,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - towncrier = towncrier:_main
 
 requirements:
-  build:
-    - python
-    - pip
+  host:
     - incremental
+    - python >=2.7
+    - pip
   run:
-    - python
+    - python >=2.7
     - click
     - jinja2
     - incremental
@@ -37,7 +37,7 @@ test:
     - towncrier --help
 
 about:
-  home: https://github.com/hawkowl/towncrier
+  home: https://github.com/twisted/towncrier
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -52,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - kain88-de
+    - ericpre
