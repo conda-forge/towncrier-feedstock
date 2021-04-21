@@ -1,7 +1,7 @@
 About towncrier
 ===============
 
-Home: https://github.com/hawkowl/towncrier
+Home: https://github.com/twisted/towncrier
 
 Package license: MIT
 
@@ -121,5 +121,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ericpre](https://github.com/ericpre/)
 * [@kain88-de](https://github.com/kain88-de/)
 
