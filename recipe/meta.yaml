@@ -16,18 +16,19 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - towncrier = towncrier:_main
+    - twoncrier = towncrier._shell:cli
 
 requirements:
   host:
     - incremental
-    - python >=2.7
     - pip
-  run:
     - python >=2.7
+  run:
     - click
-    - jinja2
+    - click-default-group
     - incremental
+    - jinja2
+    - python >=2.7
     - toml
 
 test:
