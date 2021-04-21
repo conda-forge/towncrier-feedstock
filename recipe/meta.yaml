@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "19.2.0" %}
-{% set sha256 = "48251a1ae66d2cf7e6fa5552016386831b3e12bb3b2d08eb70374508c17a8196" %}
+{% set version = "21.3.0" %}
+{% set sha256 = "6eed0bc924d72c98c000cb8a64de3bd566e5cb0d11032b73fcccf8a8f956ddfe" %}
 
 package:
   name: {{ name|lower }}
@@ -13,21 +13,22 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - towncrier = towncrier:_main
+    - twoncrier = towncrier._shell:cli
 
 requirements:
   host:
     - incremental
-    - python >=2.7
     - pip
-  run:
     - python >=2.7
+  run:
     - click
-    - jinja2
+    - click-default-group
     - incremental
+    - jinja2
+    - python >=2.7
     - toml
 
 test:
@@ -41,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Building newsfiles for your project'
+  summary: Building newsfiles for your project
 
   description: |
     towncrier is a utility to produce useful, summarised news files for your project.
