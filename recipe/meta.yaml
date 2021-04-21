@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - incremental
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - click
     - jinja2
     - incremental
