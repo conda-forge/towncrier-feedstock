@@ -30,6 +30,7 @@ requirements:
     - jinja2
     - python >=2.7
     - toml
+    - setuptools
 
 test:
   imports:
