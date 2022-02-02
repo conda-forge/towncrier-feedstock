@@ -16,7 +16,7 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - twoncrier = towncrier._shell:cli
+    - towncrier = towncrier._shell:cli
 
 requirements:
   host:
