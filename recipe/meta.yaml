@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "21.3.0" %}
-{% set sha256 = "6eed0bc924d72c98c000cb8a64de3bd566e5cb0d11032b73fcccf8a8f956ddfe" %}
+{% set version = "21.9.0" %}
+{% set sha256 = "9cb6f45c16e1a1eec9d0e7651165e7be60cd0ab81d13a5c96ca97a498ae87f48" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - towncrier = towncrier._shell:cli
@@ -22,14 +22,14 @@ requirements:
   host:
     - incremental
     - pip
-    - python >=2.7
+    - python >=3.6
   run:
     - click
     - click-default-group
     - incremental
     - jinja2
-    - python >=2.7
-    - toml
+    - python >=3.6
+    - tomli
     - setuptools
 
 test:
