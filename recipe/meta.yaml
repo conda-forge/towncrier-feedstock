@@ -29,7 +29,8 @@ requirements:
     - incremental
     - jinja2
     - python >=2.7
-    - toml
+    - toml # [py<36]
+    - tomli # [py>=36]
     - setuptools
 
 test:
