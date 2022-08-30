@@ -22,15 +22,15 @@ requirements:
   host:
     - incremental
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - click
     - click-default-group
     - incremental
     - jinja2
-    - python >=3.6
-    - tomli
+    - python >=3.7
     - setuptools
+    - tomli
 
 test:
   imports:
