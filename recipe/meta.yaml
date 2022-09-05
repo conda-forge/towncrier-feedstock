@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "21.9.0" %}
-{% set sha256 = "9cb6f45c16e1a1eec9d0e7651165e7be60cd0ab81d13a5c96ca97a498ae87f48" %}
+{% set version = "22.8.0" %}
+{% set sha256 = "7d3839b033859b45fb55df82b74cfd702431933c0cc9f287a5a7ea3e05d042cb" %}
 
 package:
   name: {{ name|lower }}
@@ -22,15 +22,15 @@ requirements:
   host:
     - incremental
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - click
     - click-default-group
     - incremental
     - jinja2
-    - python >=3.6
-    - tomli
+    - python >=3.7
     - setuptools
+    - tomli
 
 test:
   imports:
