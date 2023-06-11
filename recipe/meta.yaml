@@ -37,6 +37,7 @@ test:
   imports:
     - towncrier
   commands:
+    - pip check
     - towncrier --help
 
 about:
