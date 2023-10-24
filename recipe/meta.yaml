@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "23.6.0" %}
-{% set sha256 = "fc29bd5ab4727c8dacfbe636f7fb5dc53b99805b62da1c96b214836159ff70c1" %}
+{% set version = "23.10.0" %}
+{% set sha256 = "8754e96264b55beca526a8ee77a3cc7b2170cfb2411f53eb6ac42e183ac96a17" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,6 @@ requirements:
     - python >=3.7
   run:
     - click
-    - click-default-group
     - incremental
     - jinja2
     - python >=3.7
