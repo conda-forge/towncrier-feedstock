@@ -20,16 +20,15 @@ build:
 
 requirements:
   host:
-    - incremental =22.10.0
-    - hatchling >=1.12.2,<2
+    - hatchling
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - click
-    - incremental
+    - importlib-resources >=5.0
+    - importlib-metadata >=4.6
     - jinja2
-    - python >=3.7
-    - setuptools
+    - python >=3.8
     - tomli
 
 test:
