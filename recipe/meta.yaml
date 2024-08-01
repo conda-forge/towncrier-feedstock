@@ -1,6 +1,6 @@
 {% set name = "towncrier" %}
-{% set version = "23.11.0" %}
-{% set sha256 = "13937c247e3f8ae20ac44d895cf5f96a60ad46cfdcc1671759530d7837d9ee5d" %}
+{% set version = "24.7.1" %}
+{% set sha256 = "57a057faedabcadf1a62f6f9bad726ae566c1f31a411338ddb8316993f583b3d" %}
 
 package:
   name: {{ name|lower }}
@@ -20,16 +20,15 @@ build:
 
 requirements:
   host:
-    - incremental =22.10.0
-    - hatchling >=1.12.2,<2
+    - hatchling
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - click
-    - incremental
+    - importlib-resources >=5.0
+    - importlib-metadata >=4.6
     - jinja2
-    - python >=3.7
-    - setuptools
+    - python >=3.8
     - tomli
 
 test:
